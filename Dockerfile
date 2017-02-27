@@ -2,7 +2,7 @@ FROM python:3.5-alpine
 
 RUN apk update \
  && apk add gcc git graphviz-dev musl-dev \
- && mkdir /opt
+ && mkdir /opt \
  && cd /opt \
  && git clone https://github.com/datacenter/acitoolkit \
  && cd acitoolkit \
