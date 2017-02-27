@@ -7,4 +7,5 @@ RUN apk update \
  && cd acitoolkit \
  && python setup.py install \
  && rm -rf /var/cache/apk/*
-CMD ["/bin/sh"]
+WORKDIR /root/acitoolkit
+CMD ["/bin/bash"]
