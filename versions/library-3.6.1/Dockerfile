@@ -1,7 +1,7 @@
 FROM python:3.6.1-alpine3.6
 
 RUN apk update \
- && apk add gcc git graphviz-dev musl-dev vim \
+ && apk add bash gcc git graphviz-dev musl-dev vim \
  && mkdir /opt \
  && cd /opt \
  && git clone https://github.com/datacenter/acitoolkit \
