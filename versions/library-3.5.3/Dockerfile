@@ -8,7 +8,7 @@ RUN apk update \
  && cd acitoolkit \
  && python setup.py install \
  && rm -rf /var/cache/apk/* \
- && export PS1="[acitoolkit-3.5.3 \W]$"
+ && echo 'export PS1="[acitoolkit-3.5.3 \W]\$ "' > /root/.bashrc
 ADD vimrc /root/.vimrc
 WORKDIR /opt/acitoolkit
 CMD ["/bin/bash"]
