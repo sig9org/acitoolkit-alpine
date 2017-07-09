@@ -4,7 +4,7 @@ RUN apk update \
  && apk add bash gcc git graphviz-dev musl-dev vim \
  && mkdir /opt \
  && cd /opt \
- && git clone https://github.com/datacenter/acitoolkit \
+ && git clone -b develop https://github.com/sig9org/acitoolkit \
  && cd acitoolkit \
  && python setup.py install \
  && rm -rf /var/cache/apk/* \
